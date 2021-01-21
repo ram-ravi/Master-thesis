@@ -1,0 +1,6 @@
+Data from: 	Vattenfall
+Data: 		Göta älv flow rates as daily means in m3/s
+
+Locations:
+		Lilla Edet (measurement)
+		Göteborgsgrenen (= Lilla Edet measured minus Nordre älv Ormo measured)

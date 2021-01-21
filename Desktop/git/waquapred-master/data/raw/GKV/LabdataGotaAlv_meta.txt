@@ -1,0 +1,41 @@
+Lab Data Gota Alv
+
+File contains laboratory data:
+
+- all faecal indicators regularly monitored
+- physical/chemical analyses that may have a predictive value and with a high enough (?) sampling frequency
+- conductivity (=sampling seawater, not river water)
+
+Variables:
+Coliforms		SS-EN ISO 9308-2:2014
+E. coli			SS-EN ISO 9308-2:2014
+Clostridia		SS-EN ISO 14189:2016
+Enterococci_MF		SS-EN ISO 7899-2
+Enterococci_MPN		Enterolert-DW
+Coliphages		ISO 10705-2:2000
+Turbidity		SS 028125
+Conductivity		SS-EN 27888
+Temperature		-
+Colour			SS-EN ISO 7887:2012 part D
+Colour 410nm		SS-EN ISO 7887:2012 part C
+
+Locations:
+GÄVGAXXS		Garn
+GÄVNOXXS		Södra Nol
+GÄVSUXXS		Surte
+GÄVLÄXXS		Lärjeholm
+
+
+Data Cleansing performed:
+- Turbidity: 	analysed different date-time at two different labs	merged to one variable (=same method)
+- Conductivity:	analysed different date-time at two different labs	merged to one variable (=same method)
+- Enterococci:	two different methods with different recoveries		variables kept separate
+- Colour:	two different methods with different methodology	variables kept separate (=same unit, so possible to merge though)
+
+- Variables often more than 1 sample at unique date-time		results merged for each “location and unique sampling date-time”, NO data has been aggregated
+									(sampleID and cause of sampling excluded due to mergeing)
+
+- Characters “-” ie no numeric result					deleted (except for temperature), convert to NA
+- Characters < “less than” and > “more than”				kept (ie conversion not agreed)
+- Empty cells								convert to NA
+- Data quality								checked all data graphically after cleansing

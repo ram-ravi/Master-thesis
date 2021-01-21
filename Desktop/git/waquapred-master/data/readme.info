@@ -1,0 +1,13 @@
+SMHI: raw data from SMHI
+GKV: raw data from GKV
+ -----> these two can be found in the box folder
+
+allFiles:
+	- one file per datatype and location
+	- removed missing data/dates without measurement
+
+
+cleanedFiles:
+	- round times to closest full hour (hour is the highest resolution we currently have)
+		-> undone because some measurements for e.coli would have been rounded to the same hour
+	- transform everything (from GKV mainly) to numerical values except colifast measurements

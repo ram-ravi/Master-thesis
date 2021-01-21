@@ -1,0 +1,9 @@
+{
+    "model__func": null,
+    "model__inverse_func": null,
+    "model__regressor": "Lasso(alpha=0.025258200269627846, max_iter=200000, random_state=64, tol=0.001)",
+    "model__regressor__alpha": 0.025258200269627846,
+    "model__regressor__fit_intercept": true,
+    "pca": "passthrough",
+    "scaler": "StandardScaler()"
+}

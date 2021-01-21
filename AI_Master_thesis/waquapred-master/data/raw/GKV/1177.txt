@@ -1,0 +1,4 @@
+Small example file on the kind of information that is availabel from Folkhälsoinstitutet.
+
+Number of jounals (ie calls to medical care phon 1177) per day in cities upstreams of Gothenburg.
+Also the number of expected calls per day as well as an upper "alarm" level.
